@@ -36,3 +36,55 @@
 ```
 
 ## Environment
+> The only thing you need is to support the Python environment, for example:
+
+```console
+macwink$ python --version
+Python 2.7.18
+```
+
+## Usage
+
+### First
+> Execute the following command on the command line.
+
+```console
+macwink$ python Csv2CSharp.py 
+
+System: Darwin
+Path: /Users/macwink/workspace/work/unity/csv2code
+
+Start...
+ -- Skill.csv
+ -- Entity.csv
+Finish
+```
+
+### Second
+> Check the CSharp directory and generate the following code.
+
+```console
+macwink$ tree
+.
+├── CsvData.cs
+├── CsvDataManager.cs
+└── Model
+    ├── Entity.cs
+    └── Skill.cs
+
+1 directory, 4 files
+```
+
+### Go on
+> Copy the generated CSharp folder to the Unity project and write a simple test script to test.
+
+```csharp
+Entity csvEntity = (Entity)CsvDataManager.getInstance("Entity");
+for (int i = 0; i < csvEntity.num(); i++)
+{
+    Debug.Log("ID : " + csvEntity.getInt(i, "id")
+        + " | Name : " + csvEntity.get(i, "name")
+        + " | Desc : " + csvEntity.get(i, "desc")
+        + " | Speed : " + csvEntity.getFloat(i, "speed"));
+}
+```
