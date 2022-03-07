@@ -12,4 +12,27 @@
 
 [![repo-size](https://img.shields.io/github/languages/code-size/imacwink/csv2code?style=flat)](https://github.com/imacwink/csv2code/archive/main.zip) [![tag](https://img.shields.io/github/v/tag/imacwink/csv2code)](https://github.com/imacwink/csv2code/tags) [![license](https://img.shields.io/github/license/imacwink/csv2code)](LICENSE) 
 
-## environment 
+## Introduction
+> The purpose is to quickly generate code in multiple languages ​​through scripts and templates, such as: Lua, C++, Java, etc.
+
+```console
+.
+├── CSharp
+├── Csv2CSharp.py
+├── Example
+├── LICENSE
+├── Numeric
+│   ├── Entity
+│   │   └── Entity.csv
+│   └── Skill
+│       └── Skill.csv
+├── README.md
+└── Template
+    ├── TemplateClass.cs
+    ├── TemplateCsvData.cs
+    └── TemplateCsvDataManager.cs
+
+13 directories, 31 files
+```
+
+## Environment
